@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="../../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../static/css/style.css" rel="stylesheet">
+
+    <title>Machine Learning Lab</title>
+</head>
+<body style="background-color: #fff;">
+
+    <div class="container">
+    
+        <div class="jum" style="background-color: rgba(108, 117, 125, 0.7);">
+    <br>
+    <center>
+            <h1 class="display-20" allign="center" style="color: #fff;">Data preprocessing</h1>
+            <h2 class="display-10" style="color: #fff;">Provide Details Below...</h2>
+            </center>
+            <br>
+            <div style=" margin-left: 10px; margin-right: 10px;">
+                <h5 style="color: seashell;">Data preprocessing is a process of preparing the raw data and making it suitable for a
+                    machine learning model. It is the
+                    first and crucial step while creating a machine learning model. When creating a machine learning project, it is not
+                    always a case that we come across the clean and formatted data.</h5>
+            </div>
+            
+            <br><br>
+    
+   
+            <form method="POST" action="/preprocessing/preprocessing" enctype="multipart/form-data">
+                <div class="input-group">
+                    <input type="file" class="form-control" name="my_dataset" accept=".csv,.xlsx">
+    
+                </div>
+                <br>
+                <div class="input-group">
+                    <span class="input-group-text">Model Name</span>
+                    <input type="text" name="name_of_model" value="Data Preprocessing" class="form-control">
+                </div>
+    
+                <br><br>
+                <h4 style="color: white;">Do you like to do Data Standerization ?</h4>
+                <div class="form-check">
+                    <input class="form-check-input" value="yes" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1" style="color: whitesmoke;">
+                        Yes 
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" value="no" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2" style="color: whitesmoke;">
+                        No  
+                    </label>
+                </div>
+                
+
+                <br><br>
+    
+                <a src="./preprocessing_output.html"><button type="submit" class="btn btn-outline-light">Process Data... &#8987;
+                </button></a>
+            </form>
+            <br>
+            <div id="loading" style="display:none;">
+                <center><img class="img img-fluid" style="height:auto;width: auto;"
+                        src="{{ url_for('static' , filename = 'image/Lding.gif') }}" alt="" /></center>
+            </div>
+    
+    
+        </div>
+    </div>
+
+    <!-- change later-->
+    <script src="../../static/js/bootstrap.bundle.min.js"></script>
+    
+
+
+
+    <!-- script -->
+    <script>
+        $document
+    </script>
+</body>
+    
+</html>
