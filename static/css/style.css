@@ -11,7 +11,9 @@
 .zoom:hover img {
     transform: scale(0.8);
 }
-
+.d-block{
+    display: block !important;
+}
 
 .jum{
     background-color: #f8d9d9;
